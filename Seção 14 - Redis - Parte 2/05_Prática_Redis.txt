@@ -1,0 +1,62 @@
+-- Ordenando a lista
+ZADD
+    "jogador" 689 "felicity"
+
+ZADD
+    "jogador" 544 "angelina"
+
+ZADD
+    "jogador" 666 "xuxa"
+
+ZADD
+    "jogador" 975 "vanessa"
+
+-- Verificando o tipo de dado
+TYPE
+    "jogador"
+
+-- Verificando a quantidade de jogadores
+ZCARD
+    "jogador"
+
+-- Verificando os três primeiros
+ZRANGE
+    "jogador" 0 2
+
+-- Verificando todos os elementos da lista
+ZRANGE
+    "jogador" 0 -1
+
+-- Ordenando a lista do maior para o menor
+ZREVRANGE
+    "jogador" 0 -1
+
+-- Ordenando a lista
+ZREVRANGE
+    "jogador" 0 2
+
+-- Trazendo todos os dados
+ZREVRANGE
+    "jogador" 0 -1 WITHSCORES
+
+-- Verificando os três primeiros
+ZREVRANGE
+    "jogador" 0 2 WITHSCORES
+
+-- Verificando os pontos de um jogador
+ZSCORE
+    "jogador" "felicity"
+
+ZSCORE
+    "jogador" "angelina"
+ 
+ -- Verificando a posição do ranking
+ ZRANK
+    "jogador" "angelina"
+
+ZREVRANK
+    "jogador" "angelina"
+
+-- Incrementando a pontuação
+ZINCRBY
+    "jogador" 300 "felicity"

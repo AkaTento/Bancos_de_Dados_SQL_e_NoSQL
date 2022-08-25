@@ -1,0 +1,98 @@
+-- Inserindo dados
+SET
+    "felicity" 676
+
+SET
+    "angelina" 544
+
+SET
+    "xuxa" 666
+
+-- Visualizando todas as chaves
+KEYS *
+
+-- Pegando somente a felicity
+GET
+    "felicity"
+
+-- Apagando as chaves
+DEL
+    "felicity"
+
+DEL
+    "angelina"
+
+DEL
+    "xuxa"
+
+-- Inserindo dados
+HSET
+    "jogador" "felicity" 676
+
+HSET
+    "jogador" "angelina" 544
+
+HSET
+    "jogador" "xuxa" 666
+
+-- Visualizando todos os jogadores
+HGETALL
+    "jogador"
+
+-- Verificando o tipo do dados
+TYPE
+    "jogador"
+
+-- Inserindo dados
+SET
+    "nome" "Geek University"
+
+-- Incrementando dados
+HINCRBY
+    "jogador" "felicity" 4
+
+-- Inserindo dados
+SET
+    "idade" 32
+
+-- Pegando o dado
+GET
+    "idade"
+
+-- Incrementando a idade em 1
+INCR
+    "idade"
+
+INCR
+    "idade"
+
+INCR
+    "idade"
+
+-- Somando a idade
+INCRBY
+    "idade" 15
+
+-- Inserindo dados
+SET
+    "peso" 123.45
+
+-- Pegando o dado
+GET
+    "peso"
+
+-- Incrementando o peso
+INCRBYFLOAT
+    "peso" 7.56
+
+-- Criando HSET
+HSET
+    "produto" "nome" "carne de frango" "peso" 12.6
+
+-- Pegando o dado
+HGET
+    "produto" "peso"
+
+-- Incrementando o peso
+INCRBYFLOAT
+    "produto" "peso" 2.4

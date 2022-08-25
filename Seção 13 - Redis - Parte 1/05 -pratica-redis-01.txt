@@ -1,0 +1,14 @@
+-- Envinado mensagem para o Redis
+ECHO "Geek University"
+
+-- Setando variável
+SET "usuarios_online" 42
+
+-- Pegando um dado
+GET dado
+
+-- Setando dado
+SET dado "Qualquer"
+
+-- Deletando dado
+DEL "nome"

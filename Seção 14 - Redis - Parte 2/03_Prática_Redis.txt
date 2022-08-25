@@ -1,0 +1,30 @@
+-- Adicionando elemento na lista
+RPUSH
+    "fila:confirma-celular" "231231231221"
+
+RPUSH
+    "fila:confirma-celular" "234324234123"
+
+RPUSH
+    "fila:confirma-celular" "324234532432"
+
+-- Consultando elementos
+LLEN
+    "fila:confirma-celular"
+
+-- Removendo os elementos da lista
+LPOP
+    "fila:confirma-celular"
+
+LPOP
+    "fila:confirma-celular"
+
+LPOP
+    "fila:confirma-celular"
+
+-- Usando o BLPOP para esperar para consultar o próximo elemento da lista
+BLPOP
+    "fila:confirma-celular" 45
+
+BLPOP
+    "fila:confirma-celular" 0

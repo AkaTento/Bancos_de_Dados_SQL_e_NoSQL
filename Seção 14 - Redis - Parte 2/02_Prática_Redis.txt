@@ -1,0 +1,44 @@
+-- Adicionando elemento na lista
+RPUSH
+    "fila:confirma-celular" "231231231221"
+
+RPUSH
+    "fila:confirma-celular" "234324234123"
+
+RPUSH
+    "fila:confirma-celular" "324234532432"
+
+RPUSH
+    "fila:confirma-celular" "435345354879"
+
+-- Tamanho da lista
+LLEN
+    "fila:confirma-celular"
+
+-- Range da lista
+LRANGE
+    "fila:confirma-celular" 0 3
+
+-- Selecionado o index
+LINDEX
+    "fila:confirma-celular" 0
+
+-- Range da lista
+LRANGE
+    "fila:confirma-celular" 0 3
+
+-- Pegando o primeiro elemento
+LINDEX
+    "fila:confirma-celular" 0
+
+-- Apagando os extremos
+LTRIM
+    "fila:confirma-celular" 1 3
+
+-- Adicionando elemento na lista
+RPUSH
+    "fila:confirma-celular" "23123788221"
+
+-- Removendo o primeiro elemento da lista
+LPOP
+    "fila:confirma-celular"

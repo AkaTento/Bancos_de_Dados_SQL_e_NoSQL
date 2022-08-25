@@ -1,0 +1,52 @@
+-- Adicionando elemento na lista
+LPUSH
+    "ultimos_lancamentos" "O Hobbit"
+
+LPUSH
+    "ultimos_lancamentos" "Rocketman"
+
+LPUSH
+    "ultimos_lancamentos" "X-men: Fenix Negra"
+
+LPUSH
+    "ultimos_lancamentos" "Homen-Aranha: Longe de Casa"
+
+-- Verificando o elemento na lista
+LINDEX
+    "ultimos_lancamentos" 0
+
+LINDEX
+    "ultimos_lancamentos" 1
+
+LINDEX
+    "ultimos_lancamentos" 2
+
+LINDEX
+    "ultimos_lancamentos" 3
+
+-- Verificando quantos elementos na lista
+LLEN
+    "ultimos_lancamentos"
+
+-- Adicionando elemento na lista no final
+RPUSH
+    "ultimos_lancamentos" "O Senhor dos Aneis: A Sociedade do Anel"
+
+-- Range da lista
+LRANGE
+    "ultimos_lancamentos" 0 2
+
+LRANGE
+    "ultimos_lancamentos" 1 3
+
+-- Aparando a lista
+LTRIM
+    "ultimos_lancamentos" 0 2
+
+-- Adicionando um elemento na lista
+LPUSH
+    "ultimos_lancamentos" "O Rei Leao"
+
+-- Range da lista
+LRANGE
+    "ultimos_lancamentos" 0 4

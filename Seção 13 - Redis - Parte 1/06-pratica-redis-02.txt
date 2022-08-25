@@ -1,0 +1,76 @@
+-- Inserindo dados
+SET
+    "usuarios_online" 42
+
+SET
+    "nome" "Geek University"
+
+SET
+    "data_nascimento" "15/06/1981"
+
+-- Verificando todas as chaves
+KEYS *
+
+-- Inserindo dados
+SET
+    "nota:14-04-2019:matematica" 8.5
+
+SET
+    "nota:20-06-2019:historia" 9.5
+
+SET
+    "nota:22-06-2019:fisica" 6.3
+
+-- Verificando todas as chaves
+KEYS *
+
+-- Verificando todas as chaves
+KEYS nota*
+
+-- Verificando as notas lançadas no mês 06
+KEYS
+    nota:*-06*
+
+-- Verificando as chaves do mês 4 e 6
+KEYS
+    nota:*-0[46]*
+
+-- Verificando as chaves do mês 3, 4 e 6
+KEYS
+    nota:*-0[346]*
+
+-- Inserindo dados
+SET
+    "nota:02-05-2019:programacao" 10
+
+-- Verificando as chaves do mês 4, 5 e 6
+KEYS
+    nota:*-0[456]*
+
+-- Inserindo dados
+SET
+    "promocao:ps4:20-05-2019:valor" 1199.56
+
+SET
+    "promocao:xbox360:20-05-2019:valor" 1399.56
+
+SET
+    "promocao:nitendo:20-05-2019:valor" 2199.56
+SET
+    "promocao:ps4:22-05-2019:valor" 1150.56
+
+-- Verificando todas as chaves da promocao
+KEYS
+    promocao*
+
+-- Verificando todas as promocaoes do ps4
+KEYS
+    promocao:ps4:*
+
+-- Verificando as promoções do dia 20
+KEYS
+    promocao:*:20-*
+
+-- Inserindo diversos dados
+MSET
+    "nota:03-07-2019:portugues" 6 "nota:05-07-2019:ingles" 8.9 "nota:10-07-2019:geografia" 7.3

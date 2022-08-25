@@ -1,0 +1,45 @@
+-- Inserindo dados
+SET
+    "prova:21-06-2019:pedro:historia" 6.5
+
+SET
+    "prova:21-06-2019:pedro:geografia" 8
+
+SET
+    "prova:21-06-2019:pedro:fisica" 9.4
+
+SET
+    "prova:21-06-2019:pedro:ingles" 8.7
+
+SET
+    "prova:21-06-2019:pedro:matematica" 9
+
+HSET
+    "prova:21-06-2019:felicity" "historia" 9.5
+
+HSET
+    "prova:21-06-2019:felicity" "geografia" 7.4
+
+HSET
+    "prova:21-06-2019:felicity" "fisica" 8.7
+
+HSET
+    "prova:21-06-2019:felicity" "ingles" 9
+
+HSET
+    "prova:21-06-2019:felicity" "matematica" 8.3
+
+-- Consultando dados
+HGET
+    "prova:21-06-2019:felicity" "ingles"
+
+HGET
+    "prova:21-06-2019:felicity" "matematica"
+
+-- Verificando as chaves
+HKEYS
+    "prova:21-06-2019:felicity"
+
+-- Removendo dados
+HDEL
+    "prova:21-06-2019:felicity" "ingles"
