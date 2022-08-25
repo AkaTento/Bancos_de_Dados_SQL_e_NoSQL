@@ -1,0 +1,76 @@
+[CouchDB fornece uma] -> API RESET
+
+[Aplicacoes Web e Mobile] -> Consomem recursos atraves da internet
+
+[Recursos da Internet] -> API RESET
+
+[REST] -> Padrao do Protocolo HTTP
+
+[Vaerbos / Metodos HTTP] -> GET, POST, PUT, DELETE
+
+[GET] -> Utilizamos quando acessamos um recurso na web;
+
+[POST] -> Utilizamos quando criamos um novo recurso na web;
+
+[PUT] -> Utilizamos quando atualizamos um recurso existente na web;
+
+[DELETE] -> Utilizamos quando deletamos / excluimos um recurso existente na web;
+
+[CRUD] -> Create (POST), Retreave (GET), Update (PUT), Delete (DELETE)
+
+[Frontend] <-> [Backend] (Na Geek University usamos Python / Django e PostgreSQL)
+
+[Frontend] <-> [API REST do CouchDB]
+
+[GET] -> Considerado um metodo / verbo HTTP seguro. Nao exige autenticacao.
+
+[PUT, POST, DELETE] -> Considerados metodos / verbos HTTP inseguros. Recomenda-se autenticacao.
+
+-- Criando um banco de dados
+PUT
+    http://localhost:5498/produtos
+
+-- Verificando todos os banco de dados
+GET
+    http://localhost:5498/_all_dbs
+
+-- Criando um novo recurso no banco de dados produtos
+POST
+    http://localhost:5498/produtos
+
+-- Enviando dados para o banco de dados
+{
+    "nome": "Playstation 4"
+  , "preco": 1799.45
+}
+
+{
+    "nome": "Xbox 306"
+  , "preco": 2133.25
+}
+
+{
+    "nome": "Nintendo Wi"
+  , "preco": 1879.12
+}
+
+{
+    "nome": "Google Stadia"
+  , "preco": 10.00
+}
+
+-- Verificando todos os documentos
+GET
+    http://localhost:5498/produtos/_all_docs
+
+-- Verificando todos os documentos
+GET
+    http://localhost:5498/produtos/_all_docs?include_docs=true
+
+-- Atuazando dados
+PUT
+     http://localhost:5498/produtos/7603576b2c1f8b23067df4b408005870
+
+-- Deletando um documento
+DELETE
+     http://localhost:5498/produtos/7603576b2c1f8b23067df4b408005870

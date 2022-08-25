@@ -1,0 +1,13 @@
+-- Criando um documento
+{
+    "_id": "7603576b2c1f8b23067df4b4080046bf"
+  , "nome": "Felicity"
+  , "sobrenome": "Jones
+}
+
+{
+    "_id": "7603576b2c1f8b23067df4b408005870"
+  , "nome": "Angelina"
+  , "sobrenome": "Jolie"
+  , "data_nascimento": "10/04/1976"
+}

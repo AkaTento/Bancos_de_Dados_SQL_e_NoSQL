@@ -1,0 +1,78 @@
+-- Criando um banco de dados
+PUT
+    http://localhost:5498/produtos
+
+-- Enviando dados para o banco de dados
+{
+    "nome": "Playstation 4"
+  , "preco": 1775.34
+  , "estoque": 45
+}
+
+{
+    "nome": "Xbox 360"
+  , "preco": 1899.00
+  , "estoque": 50
+}
+
+{
+    "nome": "Nintendo Wii"
+  , "preco": 1689.34
+  , "estoque": 12
+}
+
+{
+    "nome": "Google Stadia"
+  , "preco": 10.00
+  , "estoque": 100
+}
+
+-- Selecionando os dados
+{
+    "selector": {
+        "_id": {
+            "$gt": null
+        }
+    }
+}
+
+-- Selecionando os dados
+{
+    "selector": {
+        "preco": {
+            "$gt": 1700
+        }
+    }
+}
+
+{
+    "selector": {
+        "preco": {
+            "$gte": 1600
+        }
+    }
+}
+
+{
+    "selector": {
+        "preco": {
+            "$lt": 100
+        }
+    }
+}
+
+{
+    "selector": {
+        "preco": {
+            "$lte": 1600
+        }
+    }
+}
+
+{
+    "selector": {
+        "preco": {
+            "$lte": 1700
+        }
+    }
+}
