@@ -1,0 +1,42 @@
+Exercícios Seção 04
+
+1) O que é a linguagem SQL?
+
+R: SQL significa Structured Query Language, ou Linguagem de Consulta Estruturada.
+Mais importante que isso é que a SQL é a linguagem padrão dos Bancos de Dados Relacionais.
+
+2) A linguagem SQL se divide em quantos subgrupos? E quais são eles?
+
+R: A linguagem SQL se divide em 5 subgrupos:
+	1 - DQL - Data Query Language (Linguagem de Consulta de Dados)
+	2 - DML - Data Manipulation Language (Linguagem de Manipulação de Dados)
+	3 - DDL - Data Definition Language (Linguagem de Definição de Dados)
+	4 - DCL - Data Control Language (Linguagem de Controle de Dados)
+	5 - DTL - Data Transaction Language (Linguagem de Transação de Dados)
+
+3) Quais os comandos do Data Query Language e qual sua utilização?
+
+R: SELECT. Selecionando todos os dados da tabela 
+
+4) Quais os comandos do Data Manipulation Language e qual sua utilização?
+
+R: INSERT - Usado para inserir um registro a uma tabela existente; 
+   UPDATE - Usado para alterar valores de dados em um ou mais registros de uma tabela; 
+   DELETE - Usado para remover registros de uma tabela.
+
+5) Quais os comandos do Data Definition Language e qual sua utilização?
+
+R: CREATE - Usado para criar um banco de dados, tabela e outros objetos em um banco de dados;
+   ALTER - Usado para alterar a estrutura de tabelas ou outro objeto em um banco de dados;
+   DROP - Usado para apagar bancos de dados, tabelas e outros objetos.
+
+6) Quais os comandos do Data Control Language e qual sua utilização?
+
+R: GRANT - Usado para autorizar um usuário a executar ou setar operações no banco de dados;
+   REVOKE - Usado para remover ou restringir a capacidade de um usuário de executar operações.
+
+7) Quais os comandos do Data Transaction Language e qual sua utilização?
+
+R: BEGIN (ou START TRANSACTION*) - Usado para marcar o começo de uma transação que pode ser completada ou não.
+   COMMIT - Finaliza uma transação.
+   ROLLBACK - Faz com que as mudanças nos dados existentes deste o último COMMIT sejam descartadas.   

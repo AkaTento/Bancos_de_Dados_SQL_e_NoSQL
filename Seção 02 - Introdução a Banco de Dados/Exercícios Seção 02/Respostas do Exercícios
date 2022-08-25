@@ -1,0 +1,52 @@
+Exercícios Seção 02
+
+1) Defina dado;
+   
+R: Elemento bruto geralmente proveniente de uma entrada do usuário ou de outros sistemas.
+
+
+2) Defina informação;
+
+R: Elemento processado (lapidado) constituído de dados.
+
+
+3) Qual a diferença entre dado e informação?
+
+R: O dado ele sozinho não gera uma informação exemplo 100, Oeste, Ricardo, já o dado em um contexto gera a informação
+exemplo: Ricardo é vendedor da Região Oeste e vendeu 100 sapatos.
+
+
+4) O que são Bancos de Dados Relacionais?
+
+R: São Modelos Relacionais, onde os dados estão guardados entre tabelas que por sua vez
+podem ou não estar relacionadas.
+
+
+5) O que são Bancos de Dados Não Relacionais?
+
+R: São modelos não relacionais NoSQL - Not Only SQL - Não apenas SQL e focado na performace.
+
+
+6) Qual a diferença entre Banco de Dados Relacional e Banco de Dados Não Relacional?
+
+R: A diferença é que no relacional usa-se chaves primárias e estrangeiras e o modelo é relacional e o Não relacional não tem essa estrutura definida sendo flexível.
+
+
+7) Cite 3 exemplos de Banco de Dados Relacionais.
+
+R: Oracle, Microsoft SQL Server e MySQL.
+
+
+8) Cite 3 exemplos de Banco de Dados Não Relacionais.
+
+R: MongoDB, Cassandra e Redis.
+
+
+9) Defina a Arquitetura Cliente-Servidor;
+
+R: É a estrutura on temos o Banco de Ddos com um Web Server, os clientes vão conectar usando uma VPN.
+
+
+10) Cite 3 tipos de serviços que podem ser ofertados utilizando a arquitetura cliente-servidor;
+
+R: Web Server, Banco de Dados e VPN.

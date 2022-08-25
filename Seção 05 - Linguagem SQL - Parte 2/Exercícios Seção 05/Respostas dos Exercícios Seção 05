@@ -1,0 +1,39 @@
+Exercícios Seção 05
+
+1) Qual a necessidade de se utilizar a cláusula WHERE em uma consulta?
+
+R: Para filtrar uma dado desejado.
+
+2) Por que as vezes precisamos fazer consultas em múltiplas tabelas?
+
+R: Quando temos relacionamentos entre tabelas significa que os dados estão espalhados entre estas tabelas, e ao precisarmos realizar consultas as vezes precisamos consultar nestas múltiplas tabelas.
+
+3) O que é a junção de tabelas?
+
+R: Para criarmos esta seleção de dados devemos definir os critérios de agrupamento para trazer estes dados. Estes critérios são chamados de Junções. 
+Uma junção de tabelas cria uma pseudo-tabela derivada de duas ou mais tabelas de acordo com as regras especificadas, e que são parecidas com as regras da Teoria dos Conjuntos.
+
+4) O que são funções de agregação? Cite 3 que você ache mais importantes.
+
+R: Uma função de agregação processa um conjunto de valores contidos em uma única coluna de uma tabela e retorna um único valor como resultado.
+	1 - MAX
+	2 - MIN
+	3 - AVG
+
+5) Por que as vezes precisamos agrupar resultados?
+
+R: Durante o desenvolvimento de aplicações as vezes faz-se necessário agrupar e/ou ordernar os resultados para uma melhor apresentação.
+
+6) Qual é a forma padrão de ordenação de resultados em uma consulta?
+
+R: ASC (Ascendente)
+
+7) Cite 3 funções de dada e hora.
+
+R: 1 - NOW()
+   2 - CURDATE()
+   3 - CURTIME()
+
+8) O que são subconsultas?
+
+R: Uma subconsulta nada mais é do que uma instrução SELECT dentro de outro SELECT que retorna algumas colunas específicas que são usadas em algumas funções como INSERT e UPDATE e DELETE por exemplo.

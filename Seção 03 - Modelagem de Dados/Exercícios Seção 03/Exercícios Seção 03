@@ -1,0 +1,99 @@
+Exercícios Seção 03
+
+1) Defina Modelagem Conceitual;
+
+R: Este é o modelo de mais alto nível, ou seja, que está mais próximo dos usuários. 
+O nível conceitual é desenvolvido com alto nível de abstração, a partir dos requisitos do sistema, extraídos na fase de levantamento de requisitos pelos analista de sistemas.
+Esse modelo pode ser elaborado de forma textual ou por meio de dois diagramas: Diagrama de Entidade e Relacionamento e/ou Diagrama de Classes
+
+2) Defina Modelagem Lógica;
+
+R: Este modelo descreve como os dados serão armazenados no banco de dados e também seus relacionamentos.
+Neste modelo ainda pode ser definida a tecnologia que será utilizada para armazenagem dos dados: Bancos de Dados Relacionais ou Bancos de Dados Não Relacionais
+
+3) Defina Modelagem Física;
+
+R: Também chamado de Modelo de Implementação, descreve, por meio de alguma linguagem (comumente SQL), como será feita a armazenagem do banco.
+Neste nível se escolhe qual Sistema Gerenciador de Banco de Dados (SGBD) será utilizado, levando em consideração o modelo lógico adotado.
+
+4) Explique a Cardinalidade Máxima e Mínima entre relações;
+
+R: A cardinalidade máxima é n:m Indica que uma ocorrência da entidade A pode se relacionar com várias ocorrências da entidade B e vice versa.
+E a mínima é 1:1 Indica que uma ocorrência da entidade A pode se relacionar exclusivamente com uma ocorrência da entidade B e vice versa.
+
+5) O que é a Normalização de Dados?
+
+R: É o processo formal e passo a passo que examina o documento descritivo gerado pelos analistas de sistemas durante a análise de requisitos em busca de definir as entidades, atributos, relacionamentos, chaves primárias e chaves estrangeiras do banco de dados a ser modelado.
+
+6) Defina a Primeira Forma Normal;
+
+R: Uma entidade estará na primeira forma normal (IFN) se todos os campos forem atômicos (simples) e não multivalorados (com múltiplos valores).
+
+7) Defina a Segunda Forma Normal;
+
+R: Uma entidade estará na 2FN se ela já se encontrar na 1FN e todos os atributos não chave forem totalmente dependentes da chave primária.
+
+8) Defina a Terceira Forma Normal;
+
+R: Na 3FN temos simplesmente que eliminar os campos que podem ser obtidos pela
+equação de outros campos da mesma tabela.
+
+9) O que é o MER - Modelo de Entidade e Relacionamento?
+
+R: É  um modelo de dados para descrever os dados ou aspectos de informação de um domínio de negócio ou seus requisitos de processo, de uma maneira abstrata que em última análise se presta a ser implementada em um banco de dados, como um banco de dados relacional. Os principais componentes dos Modelos Entidade-Relacionamento (MER) são as entidades (coisas,objetos) suas relações e armazenamento em bancos de dados. 
+
+10) O que é o DER - Diagrama de Entidade e Relacionamento?
+
+R: Enquanto o MER é um modelo conceitual, o Diagrama Entidade Relacionamento (Diagrama ER ou ainda DER) é a sua representação gráfica e principal ferramenta.
+
+
+11) Construa o Diagrama Entidade-Relacionamento para o sistema abaixo:
+Em uma clínica trabalham médicos de diversas especialidades. Cada médico é identificado pelo seu CRM, possui um nome e recebe
+um salário na clínica. Um médico pode ter formação em diversas especialidades (ortopedia, traumatologia, etc) mas só exerce uma
+delas na clínica. Para todo paciente internado na clínica são cadastrados alguns dados pessoais: nome, RG, CPF, endereço, telefone(s)
+para contato e data de nascimento. Um paciente tem sempre um determinado médico como responsável (com um horário de visita
+diário predeterminado), porém vários outros médicos podem participar do seu tratamento. Pacientes estão sempre internados em
+quartos individuais, que são identificados por um número e ficam em um andar da clínica.
+
+12) Construa o Diagrama Entidade-Relacionamento para o sistema abaixo:
+Uma faculdade oferece vários cursos cujos currículos são compostos por diversas disciplinas. Cada disciplina pode ser oferecida para vários
+cursos dis?ntos; uma disciplina pode ter outras disciplinas como pré-requisitos em série ou em paralelo. Na faculdade há diferentes ?pos de
+pessoas iden?ﬁcadas por um único número funcional: os alunos, professores e funcionários – cada qual com seus atributos gerais e especíﬁcos
+(deﬁna alguns). Os alunos como na Geek University, só podem estar inscritos em um único curso em um dado momento (status a?vo), e só
+poderão se inscrever em outro curso caso todas as suas inscrições estejam ﬁnalizadas (status concluído) – são armazenadas informações de ano
+de início e de término. Em cada semestre, os alunos matriculam-se em turmas correspondentes às disciplinas do seu curso. Professores podem
+ministrar para várias turmas, e toda turma tem obrigatoriamente um professor. Os funcionários auxiliam os professores, sem exclusividade.
+Tanto os professores quanto os funcionários podem decidir se matricular em um curso da universidade, com as devidas restrições. A base de
+dados deve permi?r a geração de listas de notas para cada turma, onde deve constar com que professor um aluno fez qual disciplina.
+
+13) Construa o Diagrama Entidade-Relacionamento para o sistema abaixo:
+Uma garagem para estacionamento de veículos pretende implementar um sistema que lhe permita administrar a informação rela?va ao
+estacionamento dos seus clientes. A garagem é composta por um conjunto de vagas cada uma podendo estar ocupada ou não. Há dois ?pos de
+vagas: avulsa (se houver disponibilidade) ou mensal. Cada vaga tem um preço – a avulso tem um custo por hora e o mensal um custo ﬁxo. Os
+preços serão diferenciados de acordo com o ?po de veículo: automóvel ou moto. Cada vaga mensal possui um cliente associado. Para cada
+cliente é registrado seu nome e CPF, sendo que um dado cliente pode contratar várias vagas mensais. A cada vez que um cliente estacionar um
+veículo (ﬁzer uma estacionagem), deverá se armazenar o CPF do cliente, código da vaga, a data/hora de entrada e de saída, a placa do veículo
+estacionado e o custo gerado (que pode ser 0 para clientes mensais).
+
+14) Construa o Diagrama Entidade-Relacionamento para o sistema abaixo:
+Uma pizzaria de tele-entrega apresenta um cardápio composto por diversos tipos de pizza, cujos dados são: número do item, nome da
+pizza, lista de ingredientes e preços das pizzas pequena, média e grande, como por exemplo: (12, francesa, (queijo, presunto,
+champignon, aspargo), 10.00, 15.00, 18.00). Na pizzaria trabalham funcionários que emitem pedidos de pizzas. Cada pedido possui
+um número e uma data de emissão, além do nome, telefone e endereço do cliente que solicitou o pedido. Um pedido, emitido por
+apenas um funcionário, é composto por vários itens: cada item possui um número e se refere a uma determinada pizza do cardápio,
+em um determinado tamanho (pequena, média ou grande) e em uma certa quantidade. Dos funcionários entregadores (ou seja,
+responsáveis pela entrega de um ou mais pedidos), deve-se saber o número do telefone celular para um eventual contato durante uma
+entrega. Uma entrega destina-se a um bairro, e para cada bairro existe um tempo máximo de espera para a entrega de um pedido.
+Defina outras entidades/atributos que julgar relevante.
+
+15) Construa o Diagrama Entidade-Relacionamento para o sistema abaixo:
+Uma empresa de reparo de automóveis pretende implementar um sistema para administrar a informação relativa aos reparos efetuados nos
+veículos de seus clientes. O sistema de informação deverá permitir manter um registro de todos os reparos efetuados. A empresa registra as
+seguintes informações de cada cliente: código de identificação, nome, endereço, telefone. A informação relativa aos veículos que um dado cliente
+teve ou tem e as datas em que fizeram o primeiro reparo, também são importantes. Em relação aos funcionários da oficina é necessário registrar a
+seguinte informação: código de identificação, nome, endereço, telefone e categoria profissional. O custo/hora da mão-de-obra depende da
+categoria do funcionário e é definido por meio de uma tabela que é atualizada regularmente. Em relação a cada reparo é necessário saber: qual
+veículo, qual cliente, a data em que o reparo foi efetuado e o custo total do reparo. A empresa pretende saber para cada reparo quais peças foram
+utilizadas e o seu preço, bem como o tempo de mão de obra gasto por cada funcionário e o respectivo custo. A informação relativa às peças em
+estoque deverá ser: código de identificação, designação, custo unitário e quantidade armazenada.
+
